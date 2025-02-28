@@ -1,0 +1,58 @@
+plugins {
+	alias libs.plugins.android.application
+}
+
+def signingData = rootProject.file 'signing.properties'
+def signing = new Properties()
+signing.load new FileInputStream(signingData)
+
+android {
+	namespace 'dev.holocene.banasiak'
+	compileSdk 35
+
+	defaultConfig {
+		applicationId 'dev.holocene.banasiak'
+		minSdk 24
+		targetSdk 35
+		versionCode 1
+		versionName '1.0.0'
+	}
+
+	signingConfigs {
+		release {
+			storeFile file(signing['storeFile'])
+			storePassword signing['storePassword']
+			keyAlias signing['keyAlias']
+			keyPassword signing['keyPassword']
+		}
+	}
+
+	buildTypes {
+		debug {
+			signingConfig signingConfigs.debug
+		}
+
+		release {
+			signingConfig signingConfigs.release
+			proguardFiles getDefaultProguardFile('proguard-android-optimize.txt')
+			minifyEnabled true
+			shrinkResources true
+		}
+	}
+
+	compileOptions {
+		coreLibraryDesugaringEnabled true
+		sourceCompatibility JavaVersion.VERSION_11
+		targetCompatibility JavaVersion.VERSION_11
+	}
+}
+
+dependencies {
+	coreLibraryDesugaring libs.desugar
+	implementation libs.appcompat
+	implementation libs.fragment
+	implementation libs.gson
+	implementation libs.material
+	implementation libs.preference
+	implementation libs.work
+}

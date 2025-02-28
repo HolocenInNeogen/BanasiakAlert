@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Banasiak Alert</string>
+	<string name="app_description">Powiadamia o aktualnościach Olimpiady Biologicznej</string>
+	<string name="interval_15">15 min</string>
+	<string name="interval_30">30 min</string>
+	<string name="interval_60">1 godz.</string>
+	<string name="interval_120">2 godz.</string>
+	<string name="interval_360">6 godz.</string>
+	<string name="interval_1440">24 godz.</string>
+	<string name="interval_title">Częstość sprawdzania aktualności</string>
+	<string name="channel_name">Olimpiada Biologiczna</string>
+	<string name="network_title">Używane połączenia internetowe</string>
+	<string name="network_not_roaming">Wi-Fi lub sieć komórkowa poza roamingiem</string>
+	<string name="network_connected">Wi-Fi lub dowolna sieć komórkowa</string>
+	<string name="network_unmetered">Tylko Wi-Fi</string>
+	<string name="edit_title">Informuj o modyfikacjach</string>
+	<string name="edit_summary">Przełącza powiadomienia o edycji istniejącego wpisu</string>
+	<string name="channel_description">Aktualności Olimpiady Biologicznej</string>
+	<string name="prefix_edit">"Edycja: "</string>
+</resources>

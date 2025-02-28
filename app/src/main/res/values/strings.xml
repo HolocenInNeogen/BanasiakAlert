@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Banasiak Alert</string>
+	<string name="app_description">Notifies of Polish Biology Olympiad news</string>
+	<string name="interval_title">News checking interval</string>
+	<string name="interval_15">15 min</string>
+	<string name="interval_30">30 min</string>
+	<string name="interval_60">1 h</string>
+	<string name="interval_120">2 h</string>
+	<string name="interval_360">6 h</string>
+	<string name="interval_1440">24 h</string>
+	<string name="channel_name">Polish Biology Olympiad</string>
+	<string name="network_title">Used Internet connections</string>
+	<string name="network_unmetered">Wi-Fi only</string>
+	<string name="network_not_roaming">Wi-Fi or non-roaming cellular</string>
+	<string name="network_connected">Wi-Fi or any cellular</string>
+	<string name="edit_title">Alert on modifications</string>
+	<string name="edit_summary">Toggles alerts for edits of an existing article</string>
+	<string name="channel_description">News from the Polish Biology Olympiad</string>
+	<string name="prefix_edit">"Edit: "</string>
+</resources>

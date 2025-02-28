@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="interval_entries">
+		<item>@string/interval_15</item>
+		<item>@string/interval_30</item>
+		<item>@string/interval_60</item>
+		<item>@string/interval_120</item>
+		<item>@string/interval_360</item>
+		<item>@string/interval_1440</item>
+	</string-array>
+	<string-array name="interval_values">
+		<item>15</item>
+		<item>30</item>
+		<item>60</item>
+		<item>120</item>
+		<item>360</item>
+		<item>1440</item>
+	</string-array>
+	<string-array name="network_entries">
+		<item>@string/network_connected</item>
+		<item>@string/network_not_roaming</item>
+		<item>@string/network_unmetered</item>
+	</string-array>
+	<string-array name="network_values">
+		<item>CONNECTED</item>
+		<item>NOT_ROAMING</item>
+		<item>UNMETERED</item>
+	</string-array>
+</resources>

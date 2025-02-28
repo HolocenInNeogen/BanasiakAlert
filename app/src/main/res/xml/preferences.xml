@@ -1,0 +1,26 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+	<DropDownPreference
+		android:defaultValue="UNMETERED"
+		android:entries="@array/network_entries"
+		android:entryValues="@array/network_values"
+		android:key="network"
+		android:title="@string/network_title"
+		app:useSimpleSummaryProvider="true"
+	/>
+	<DropDownPreference
+		android:defaultValue="15"
+		android:entries="@array/interval_entries"
+		android:entryValues="@array/interval_values"
+		android:key="interval"
+		android:title="@string/interval_title"
+		app:useSimpleSummaryProvider="true"
+	/>
+	<SwitchPreference
+		android:defaultValue="false"
+		android:key="edit"
+		android:title="@string/edit_title"
+		app:summary="@string/edit_summary"
+	/>
+</PreferenceScreen>
